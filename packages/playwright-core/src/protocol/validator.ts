@@ -1120,6 +1120,8 @@ scheme.PageGoForwardParams = tObject({
 scheme.PageGoForwardResult = tObject({
   response: tOptional(tChannel(['Response'])),
 });
+scheme.PageForceGarbageCollectionParams = tOptional(tObject({}));
+scheme.PageForceGarbageCollectionResult = tOptional(tObject({}));
 scheme.PageRegisterLocatorHandlerParams = tObject({
   selector: tString,
   noWaitAfter: tOptional(tBoolean),
